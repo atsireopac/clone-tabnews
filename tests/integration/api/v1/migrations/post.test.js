@@ -18,6 +18,7 @@ test("POST to /api/v1/migrations should return 200", async () => {
   expect(response1Body.length).toBeGreaterThan(0);
 });
 
+// eslint-disable-next-line jest/no-identical-title
 test("POST to /api/v1/migrations should return 200", async () => {
   const response2 = await fetch("http://localhost:3000/api/v1/migrations", {
     method: "POST",
